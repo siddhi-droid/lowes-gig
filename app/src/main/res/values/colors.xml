@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#464646</color>
+    <color name="main_headline_color">#f2f2f2</color>
+    <color name="sub_headline_color">#bababa</color>
+    <color name="tool_bar_title_color">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

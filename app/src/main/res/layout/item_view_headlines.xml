@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linear_news_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_news"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_two_hundred"
+            app:cardCornerRadius="@dimen/dimen_05_dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/iv_news_source"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <TextView
+                android:id="@+id/tv_main_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoslab_regular"
+                android:padding="@dimen/dimen_10_dp"
+                android:textColor="@color/main_headline_color"
+                android:textSize="@dimen/main_headline"
+                tools:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_main_headline"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="@dimen/twenty_four_dp"
+                android:layout_marginBottom="@dimen/twelve_dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10_dp">
+
+
+                <TextView
+                    android:id="@+id/tv_news_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoslab_bold"
+                    android:textColor="@color/sub_headline_color"
+                    android:textSize="@dimen/sub_headline"
+                    tools:text="Vox.com" />
+
+
+                <TextView
+                    android:id="@+id/tv_news_published_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:fontFamily="@font/robotoslab_bold"
+                    android:textColor="@color/sub_headline_color"
+                    android:textSize="@dimen/sub_headline"
+                    tools:text="2019-08-09" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

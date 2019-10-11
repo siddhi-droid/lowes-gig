@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tool_bar_title_size">29sp</dimen>
+
+    <dimen name="main_headline">20sp</dimen>
+
+    <dimen name="detail_main_headline">29sp</dimen>
+
+    <dimen name="detail_short_content">14sp</dimen>
+    <dimen name="sub_headline">12sp</dimen>
+
+
+    <dimen name="sixteen_dp">16dp</dimen>
+
+    <dimen name="twelve_dp">12dp</dimen>
+
+    <dimen name="twenty_four_dp">24dp</dimen>
+    <dimen name="dimen_10_dp">10dp</dimen>
+    <dimen name="dimen_05_dp">5dp</dimen>
+    <dimen name="dimen_two_hundred">200dp</dimen>
+    <dimen name="app_bar_size">56dp</dimen>
+    <dimen name="recyclerview_margin_top">72dp</dimen>
+
+    <dimen name="sixty_four_dp">64dp</dimen>
+
+
+</resources>
