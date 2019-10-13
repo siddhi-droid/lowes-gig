@@ -6,7 +6,8 @@
     <string name="title_activity_news_details">NewsDetailsActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="network_connection_error">Internet connection lost, please retry again</string>
+    <string name="loading">Loading, please wait!</string>
+    <string name="network_connection_error">Internet connection lost</string>
     <string name="network_default_error">Something wrong happened, please retry again</string>
     <string name="network_internal_error">Our systems got an error, please retry again</string>
     <string name="network_server_not_available">Our services are under maintenance, please retry after some time

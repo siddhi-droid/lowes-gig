@@ -19,7 +19,7 @@ data class ArticlesItem(
 
     @field:SerializedName("source")
     @NonNull
-    val source: Source,
+    val source: Source?,
 
     @field:SerializedName("title")
     val title: String,

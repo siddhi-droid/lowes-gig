@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.siddhi.lowesgig.data.local.db.DBConstants
 import com.siddhi.lowesgig.data.local.entity.NewsEntity
+import io.reactivex.Single
 
 @Dao
 interface NewsDao {
@@ -13,6 +14,6 @@ interface NewsDao {
     fun insertAll(articleList: List<NewsEntity?>)
 
     @Query("SELECT * FROM " + DBConstants.NEWS_TABLE_NAME)
-    fun getAll(): List<NewsEntity?>
+    fun getAll(): Single<List<NewsEntity>>
 
 }

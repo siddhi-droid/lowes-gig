@@ -1,6 +1,7 @@
 package com.siddhi.lowesgig.ui.headlines
 
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.siddhi.lowesgig.R
@@ -37,8 +38,16 @@ class HeadlinesActivity : BaseActivity<HeadlinesViewModel>() {
 
     override fun setupObservers() {
         super.setupObservers()
+        viewModel.loading.observe(this, Observer {
+            progress_headlines.visibility = if (it) View.VISIBLE else View.GONE
+        })
+
         viewModel.articles.observe(this, Observer {
             it.data?.run { headlinesAdapter.appendData(this) }
+        })
+
+        viewModel.offlineMode.observe(this, Observer {
+            if (it) showMessage("OFFLINE MODE")
         })
     }
 }

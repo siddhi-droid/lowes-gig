@@ -24,7 +24,7 @@ class HeadlinesItemViewModel @Inject constructor(
     val urlToImage: LiveData<String> = Transformations.map(data) { it.urlToImage }
     val title: LiveData<String> = Transformations.map(data) { it.title }
     val newsPublishedAt: LiveData<String?> = Transformations.map(data) { it.publishedAt }
-    val newsSource: LiveData<String?> = Transformations.map(data) { it.source.name }
+    val newsSource: LiveData<String?> = Transformations.map(data) { it.source?.name }
     val desc: LiveData<String?> = Transformations.map(data) { it.description }
 
     fun onItemClick(position: Int) {
