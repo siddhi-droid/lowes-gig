@@ -48,6 +48,7 @@ class HeadlinesActivity : BaseActivity<HeadlinesViewModel>() {
 
         viewModel.offlineMode.observe(this, Observer {
             if (it) showMessage("OFFLINE MODE")
+            viewModel.getLocally()
         })
     }
 }

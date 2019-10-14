@@ -44,11 +44,12 @@ class HeadlinesViewModel(
                         })
             )
         } else {
-            getLocally()
+            //getLocally()
+            offlineMode.postValue(true)
         }
     }
 
-    private fun getLocally() {
+    fun getLocally() {
         compositeDisposable.addAll(
             headlinesRepository.getHeadlinesFromRoomDb()
                 .subscribeOn(schedulerProvider.io())
@@ -67,7 +68,7 @@ class HeadlinesViewModel(
                             )
                             allArticles.add(articlesItem)
                             articles.postValue(Resource.success(allArticles))
-                            offlineMode.postValue(true)
+                            //offlineMode.postValue(true)
                         }
                     },
                     {
